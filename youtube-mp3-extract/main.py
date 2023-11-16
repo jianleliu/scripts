@@ -5,7 +5,15 @@ import os
 import env
 
 
-def download_youtube_audio(url, start_time, end_time, output_file):
+def download_youtube_audio(url: str, start_time: int, end_time: int, output_file: str or None):
+    """Extracts audio(.mp3) from a youtube video url.
+
+    Args:
+        url (str): The url of the youtube video.
+        start_time (int): Start time, in seconds, of the video.
+        end_time (int): The end of the video, in seconds. 
+        output_file (strorNone): None or provide a string name in env.py.
+    """
     try:
         output_file = output_file
 
